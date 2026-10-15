@@ -157,12 +157,78 @@ button#botao-cursos {
     border: none;
     box-shadow: none;
     text-align: right;
-}
+}       
 
 /* HERO */
 
 section#hero {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: #e6ddf3;
+}
+
+div#titulos-hero {
+    width: 100%;
+    height: 400px;
+    padding: 40px 20px 40px 20px;
+}
+
+div#titulos-hero > p#aprensentação-hero {
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+div#titulos-hero > h1 {
+    text-align: center;
+    font-weight: 530;
+    font-size: 2.1em;
+
+    margin-bottom: 40px;
+}
+
+div#titulos-hero > p#descrição-hero {
+    text-align: center;
+    padding: 0px 90px;
+    font-size: 17px;
+    font-weight: 350;
+    margin-bottom: 40px;
+}
+
+div#titulos-hero > p#botao-hero {
+    background-color: var(--ameixa);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    
+    
+}
+
+div#titulos-hero > p#botao-hero > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 5px;
+    padding: 10px 0px;
+}
+
+div#img-hero {
+    width: 50%;
+    height: 50%;
+}
+
+img#img-heroM {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+img#img-heroD {
+    display: none;
 }
