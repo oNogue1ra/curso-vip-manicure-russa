@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* CORES DO SITE */
+:root {
+    --rosa: #FF94DB;
+    --lilas: #CC94FF;
+    --ameixa: #663F59;
+    --vinho: #331529;
+    --fundo: #FFF8FC;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+}
+
+/* TOPO DO SITE */
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 6%;
+    background-color: var(--fundo);
+}
+
+/* LOGO */
+#logo {
+    color: var(--ameixa);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* BOTÃO HAMBÚRGUER */
+#burguer {
+    display: none;
+}
+
+/* MENU PRINCIPAL */
+#menu > ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+/* LINKS */
+#menu a {
+    display: block;
+    padding: 10px 0;
+
+    color: var(--vinho);
+    text-decoration: none;
+    font-size: 0.95em;
+
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #CC69B1;
+}
+
+/* ITEM QUE CONTÉM OS CURSOS */
+#menu > ul > li {
+    position: relative;
+}
+
+/* SUBMENU */
+#submenu-cursos {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: -15px;
+
+    min-width: 220px;
+    padding: 10px 15px;
+
+    list-style: none;
+    background-color: white;
+    border: 1px solid #F3DDED;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px #33152915;
+
+    z-index: 10;
+}
+
+/* ITENS DO SUBMENU */
+#submenu-cursos a {
+    padding: 12px 5px;
+    white-space: nowrap;
+}
+
+/* MOSTRA O SUBMENU COM MOUSE OU TECLADO */
+#menu > ul > li:hover > #submenu-cursos,
+#menu > ul > li:focus-within > #submenu-cursos {
+    display: block;
+}

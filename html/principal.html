@@ -4,68 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <title>Clariana Nogueira</title>
+    <title>Clariana Nogueira | Cursos de Manicure</title>
+
+    <link rel="stylesheet" href="../style/all.css" media="all">
+    <link rel="stylesheet" href="../style/desktop.css" media="screen and (min-width: 992px)">
+
+
+
 </head>
 <body>
-    <header>
-        <div>
-            logo
-        </div>
-    </header>
-    <span id="burguer" onclick="clickMenu()"   class="material-symbols-outlined">menu</span>
-    <nav>
-        <ul>
-            <li>Cursos</li>
+    <div class="topo">
+        <header>
+            <div id="logo">
+                logo
+            </div>
+        </header>
+            <button id="burguer"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu"
+            onclick="clickMenu()">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <nav id="menu">
             <ul>
-                <li>Manicure tradicional</li>
-                <li>Manicure russa</li>
-                <li>Esmaltação em gel</li>
-                <li>Blindagem</li>
+                <li>
+                <button type="button"
+                id="botao-cursos"
+                aria-expanded="false"
+                aria-controls="submenu-cursos"
+                onclick="toggleCursos(event)">
+                Cursos
+                </button>
+                    <ul id="submenu-cursos">
+                        <li><a href="cursos/manicure-tradicional.html">Manicure tradicional</a></li>
+                        <li><a href="cursos/manicure-russa.html">Manicure russa</a></li>
+                        <li><a href="cursos/esmaltacao-em-gel.html">Esmaltação em gel</a></li>
+                        <li><a href="cursos/blindagem.html">Blindagem</a></li>
+                    </ul>
+                </li>
+                <li>
+                <a href="#professora">Sobre mim</a>
+                </li>
+                <li>
+                <a href="#salao">Salão</a>
+                </li>
             </ul>
-            <li><a href="">sobre mim</a></li>
-            <li><a href="">salão</a></li>
-        </ul>
-     </nav>
-    <section hero>
-         FOTO PROFISSIONAL
-
-   "Aprenda a trabalhar com unhas
-       e transforme sua técnica
-          em uma profissão."
-
-       [QUERO CONHECER O CURSO]
-    </section>
-    <section o curso>
-        "O que você vai aprender"
-    </section>
-    <section para quem é?>
-        Iniciante | Já sou manicure
-    </section>
-    <section metodologia>
-        teoria + demonstração + prática
-    </section>
-    <section resultados>
-        fotos das alunas
-    </section>
-    <section depoimentos>
-
-    </section>
-    <section conheça a professora>
-
-    </section>
-    <section o salão>
-
-    </section>
-    <section FAQ>
-        conheça nosso espaço
-
-    </section>
-    <section quero ser aluna>
-        WhatsApp
-
-    </section>
+         </nav>
+    </div>
+    <main>
+        <section id="hero">
+             <!-- FOTO PROFISSIONAL
+        
+           "Aprenda a trabalhar com unhas
+           e transforme sua técnica
+              em uma profissão."
+           [QUERO CONHECER O CURSO] -->
+        </section>
+        <section id="cursos">
+            <h2>Conheça nossos cursos</h2>
+            <!-- Cards dos quatro cursos -->
+        </section>
+        <section id="curso-por-dentro">
+            <h2>Conheça o curso por dentro</h2>
+            <!-- Capa e vídeo -->
+        </section>
+        <section id="aprendizado">
+            <h2>O que você vai aprender</h2>
+            <!-- Conteúdo baseado na apostila -->
+        </section>
+        <section id="metodologia">
+            <h2>Como funciona</h2>
+            <!-- Teoria, demonstração e prática -->
+        </section>
+        <section id="resultados">
+            <h2>Resultados das alunas</h2>
+            <!-- Fotos dos trabalhos e das alunas -->
+        </section>
+        <section id="depoimentos">
+            <h2>O que as alunas dizem</h2>
+            <!-- Depoimentos reais -->
+        </section>
+        <section id="professora">
+            <h2>Conheça sua professora</h2>
+            <!-- Apresentação da Clariana -->
+        </section>
+        <section id="salao">
+            <h2>Conheça nosso salão</h2>
+            <!-- Apresentação do espaço -->
+        </section>
+        <section id="faq">
+            <h2>Perguntas frequentes</h2>
+            <!-- Dúvidas comuns -->
+        </section>
+        <section id="inscricao">
+            <h2>Pronta para dar o próximo passo?</h2>
+            <!-- Botão para contato pelo WhatsApp -->
+        </section>
+    </main>
     <footer>
-
+        <!-- Contatos e informações finais -->
     </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const burguer = document.getElementById('burguer');
+        const botaoCursos = document.getElementById('botao-cursos');
+        const submenuCursos = document.getElementById('submenu-cursos');
+        const topo = document.querySelector('.topo');
+
+        // Abre ou fecha o menu mobile
+        function clickMenu() {
+            const menuAberto = menu.style.display === 'block';
+
+            menu.style.display = menuAberto ? 'none' : 'block';
+
+            burguer.setAttribute('aria-expanded', String(!menuAberto));
+            burguer.setAttribute(
+                'aria-label',
+                menuAberto ? 'Abrir menu' : 'Fechar menu'
+            );
+
+            // Se fechou o menu, fecha também o submenu
+            if (menuAberto) {
+                fecharSubmenu();
+            }
+        }
+
+        // Abre ou fecha o submenu Cursos
+        
+
+        function toggleCursos(event) {
+            event.stopPropagation();
+
+            const submenuAberto = submenuCursos.classList.contains('aberto');
+
+            submenuCursos.classList.toggle('aberto', !submenuAberto);
+
+            botaoCursos.setAttribute(
+                'aria-expanded',
+                String(!submenuAberto)
+            );
+        }
+
+        // Fecha apenas o submenu
+        function fecharSubmenu() {
+            submenuCursos.classList.remove('aberto');
+            botaoCursos.setAttribute('aria-expanded', 'false');
+        }
+
+        // Fecha os menus quando clicar fora do cabeçalho
+            document.addEventListener('click', function(event) {
+                if (!topo.contains(event.target)) {
+            fecharSubmenu();
+            console.log(topo.contains(event.target));
+                if (window.innerWidth < 992) {
+            menu.style.display = 'none';
+            burguer.setAttribute('aria-expanded', 'false');
+            burguer.setAttribute('aria-label', 'Abrir menu');
+                    }
+                }
+            });
+
+        // Adapta o menu quando a tela muda de tamanho
+        function mudouTamanho() {
+            fecharSubmenu();
+
+            if (window.innerWidth >= 992) {
+                menu.style.display = 'block';
+                burguer.style.display = 'none';
+            } else {
+                menu.style.display = 'none';
+                burguer.style.display = 'block';
+                burguer.setAttribute('aria-expanded', 'false');
+                burguer.setAttribute('aria-label', 'Abrir menu');
+            }
+        }
+
+        window.addEventListener('resize', mudouTamanho);
+        mudouTamanho();
+    </script>
 </body>
 </html>
