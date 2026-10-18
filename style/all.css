@@ -171,7 +171,7 @@ div#titulos-hero {
     padding: 40px 20px;
 }
 
-div#titulos-hero > p#aprensentação-hero {
+div#titulos-hero > p#aprensentacao-hero {
     font-weight: 500;
     font-size: larger;
     text-align: center;
@@ -188,7 +188,7 @@ div#titulos-hero > h1 {
     margin-bottom: 40px;
 }
 
-div#titulos-hero > p#descrição-hero {
+div#titulos-hero > p#descricao-hero {
     text-align: center;
     padding: 0px 10px;
     font-size: 17px;
@@ -202,19 +202,21 @@ div#titulos-hero > p#botao-hero {
     background-color: var(--ameixa);
     color: white;
     width: 100%;
-    height: 40px;
+    height: 44px;
     border: 1px solid black;
-    text-align: center;
     
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div#titulos-hero > p#botao-hero > a {
+    display: block;
     color: white;
     text-decoration: none;
     font-weight: 400;
-    margin: 5px;
-    padding: 10px 0px;
+    padding: 10px;
+    text-align: center;
 }
 
 /*          IMG HERO           */
