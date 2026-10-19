@@ -175,7 +175,8 @@ button#botao-cursos {
 
 section#hero {
     width: 100%;
-    background-color: #e6ddf3;
+    /* background-color: #e6ddf3; */
+    background-color: white;
 }
 
 div#titulos-hero {
