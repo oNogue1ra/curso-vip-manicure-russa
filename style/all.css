@@ -175,8 +175,8 @@ button#botao-cursos {
 
 section#hero {
     width: 100%;
-    /* background-color: #e6ddf3; */
-    background-color: white;
+    background-color: #e6ddf3;
+    /* background-color: white; */
 }
 
 div#titulos-hero {
@@ -261,4 +261,82 @@ img#img-heroM {
 
 img#img-heroD {
     display: none;
+}
+
+/*        SECTION CURSOS           */
+
+section#cursos {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/*      TÍTULO SECTION CURSOS       */
+div#titulo-cursos {
+    width: 100%;
+    height: auto;
+}
+
+div#titulo-cursos > h2 {
+    text-align: center;
+}
+
+div#titulo-cursos > p {
+    max-width: 450px;
+    margin: 12px auto 25px;
+    padding: 0 10px;
+
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/*          CARDS DOS CURSOS           */
+
+div.card-curso {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background-color: #fbf3f8;
+    border: 1px solid #EBD8E5;
+    border-radius: 12px;
+}
+
+/* IMAGEM DO CARD */
+
+div.img-card {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+div.img-card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* TIPOGRAFIA DOS CARDS */
+
+div.texto-card {
+    flex: 1;
+    min-width: 0;
+}
+
+div.texto-card > h3 {
+    font-size: 1rem;
+    margin: 0 0 8px;
+    color: #663F59;
+}
+
+div.texto-card > p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
 }
