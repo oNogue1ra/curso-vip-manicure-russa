@@ -269,6 +269,7 @@ section#cursos {
     width: 100%;
     height: auto;
     padding: 10px;
+    background-color: #fbf3f8;
 }
 
 /*      TÍTULO SECTION CURSOS       */
@@ -278,6 +279,7 @@ div#titulo-cursos {
 }
 
 div#titulo-cursos > h2 {
+    color: #663F59;
     text-align: center;
 }
 
@@ -289,6 +291,8 @@ div#titulo-cursos > p {
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.5;
+
+    color: #494149;
 }
 
 
@@ -303,12 +307,23 @@ div.card-curso {
     height: auto;
     padding: 12px;
     margin-bottom: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    background-color: #fbf3f8;
+    background-color: white;
+    /* background-color: #fbf3f8; */
     border: 1px solid #EBD8E5;
     border-radius: 12px;
+    box-shadow: 0 10px 10px #663F5910;
 }
 
+/* Efeito de flutuação */
+
+@media (hover: hover) and (pointer: fine) {
+    div.card-curso:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px #663F5920;
+    }
+}
 /* IMAGEM DO CARD */
 
 div.img-card {
@@ -320,6 +335,7 @@ div.img-card > img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 /* TIPOGRAFIA DOS CARDS */
@@ -339,4 +355,6 @@ div.texto-card > p {
     font-size: 0.8rem;
     line-height: 1.4;
     margin: 0;
+
+    color: #494149;
 }
