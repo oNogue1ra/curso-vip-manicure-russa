@@ -40,7 +40,7 @@ body {
 
 /* BOTÃO HAMBÚRGUER */
 #burguer {
-    display: none;
+    /* display: block; */
 }
 
 /* MENU PRINCIPAL */
@@ -103,4 +103,4 @@ body {
 #menu > ul > li:hover > #submenu-cursos,
 #menu > ul > li:focus-within > #submenu-cursos {
     display: block;
-}
+} 
