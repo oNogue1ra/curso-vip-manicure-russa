@@ -456,3 +456,26 @@ div#video-presencial > video {
     height: auto;
     border-radius: 10px;
 }
+
+/*     BOTÃO PRESENCIAL     */
+
+a#botao-presencial {
+    background-color: var(--ameixa);
+    color: white;
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 60px;
+    margin: 20px auto;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+a#botao-presencial:hover {
+    transform: translateY(-4);
+    background-color: #7c3464;
+}
