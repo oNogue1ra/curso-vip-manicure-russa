@@ -419,7 +419,7 @@ div#texto-presencial {
 }
 
 div#texto-presencial > h3 {
-    color: var(--rosa);
+    color: rgb(255, 0, 217);
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
@@ -438,7 +438,7 @@ div#texto-presencial > p {
 
 
     text-align: center;
-    color: var(--rosa);
+    color: rgb(255, 0, 217);
 
 }
 
@@ -469,13 +469,27 @@ a#botao-presencial {
     justify-content: center;
     gap: 8px;
 
-    padding: 12px 60px;
+    padding: 14px 110px;
     margin: 20px auto;
     border-radius: 6px;
     text-decoration: none;
+
+    transition: color 0.2s ease;
+    transition: transform 0.4s ease;
+    color: rgb(255, 0, 217);
 }
 
 a#botao-presencial:hover {
-    transform: translateY(-4);
+    transform: translateY(-4px);
     background-color: #7c3464;
 }
+
+a#botao-presencial span {
+    transition: transform 0.2s ease;
+    
+}
+
+a#botao-presencial:hover span {
+    transform: translateX(4px);
+}
+
