@@ -407,7 +407,8 @@ section#curso-presencial {
     height: auto;
     padding: 10px;
 
-    background-color: white;
+    background-color: #f2d9eb;
+    /* background-color: #e6ddf3; */
 }
 
 /*  TIPOGRAFIA   */
@@ -419,7 +420,7 @@ div#texto-presencial {
 }
 
 div#texto-presencial > h3 {
-    color: rgb(255, 0, 217);
+    color: rgb(164, 14, 142);
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
@@ -438,7 +439,7 @@ div#texto-presencial > p {
 
 
     text-align: center;
-    color: rgb(255, 0, 217);
+    color: var(--ameixa);
 
 }
 
@@ -474,9 +475,8 @@ a#botao-presencial {
     border-radius: 6px;
     text-decoration: none;
 
-    transition: color 0.2s ease;
-    transition: transform 0.4s ease;
-    color: rgb(255, 0, 217);
+    transition: color 0.2s ease, transform 0.4s ease, background-color 0.2s ease;
+    color: white;
 }
 
 a#botao-presencial:hover {
