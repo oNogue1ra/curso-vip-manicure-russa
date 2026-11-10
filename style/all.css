@@ -7,6 +7,7 @@
     --ameixa: #663F59;
     --vinho: #331529;
     --fundo: #FFF8FC;
+    --rosa-claro: #f2d9eb;
 }
 
 /* CONFIGURAÇÕES GERAIS */
@@ -407,8 +408,7 @@ section#curso-presencial {
     height: auto;
     padding: 10px;
 
-    background-color: #f2d9eb;
-    /* background-color: #e6ddf3; */
+    background-color: var(--rosa-claro);
 }
 
 /*  TIPOGRAFIA   */
