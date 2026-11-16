@@ -2,6 +2,7 @@
 
 /* CORES DO SITE */
 :root {
+    --pink: rgb(164, 14, 142);
     --rosa: #FF94DB;
     --lilas: #CC94FF;
     --ameixa: #663F59;
@@ -192,14 +193,20 @@ div#titulos-hero > p#aprensentacao-hero {
     margin-bottom: 40px;
 }
 
-
+div#titulos-hero > h2 {
+    color: var(--pink);
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+}
 
 div#titulos-hero > h1 {
     text-align: center;
     font-weight: 530;
-    font-size: 2.1em;
-
+    font-size: 1.5em;
     margin-bottom: 40px;
+    color: var(--vinho);
 }
 
 div#titulos-hero > p#descricao-hero {
@@ -208,6 +215,7 @@ div#titulos-hero > p#descricao-hero {
     font-size: 17px;
     font-weight: 350;
     margin-bottom: 40px;
+    color: var(--ameixa);
 }
 
 /*      BOTAO HERO          */
@@ -294,7 +302,8 @@ div#titulo-cursos > p {
     font-size: 0.9rem;
     line-height: 1.5;
 
-    color: #494149;
+    
+    color: var(--ameixa);
 }
 
 
@@ -420,7 +429,7 @@ div#texto-presencial {
 }
 
 div#texto-presencial > h3 {
-    color: rgb(164, 14, 142);
+    color: var(--pink);
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
@@ -512,38 +521,44 @@ div#texto-resultados > h3 {
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
+    color: var(--pink);
 }
 
 div#texto-resultados > h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
+    color: var(--vinho);
 }
 
 div#texto-resultados > p {
-    max-width: 450px;
+    max-width: 400px;
     text-align: center;
     margin: 20px auto;
+    color: var(--ameixa);
 }
 
 /*      IMAGENS RESULTADOS       */
 
-div#col1-resultados {
+div#galeria-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+}
+
+div#aluna1-resultados,
+div#aluna2-resultados {
     width: 100%;
-    height: auto;
+    display: flex;
+    gap: 12px;
 }
 
-img.aluna1 {
-    width: 50%;
-    height: auto;
-}
-
-div#col2-resultados {
-    width: 100%;
-    height: auto;
-}
-
-img.aluna2 {
-    width: 50%;
-    height: auto;
+div#aluna1-resultados img,
+div#aluna2-resultados img {
+    flex: 1;
+    min-width: 0;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
 }
