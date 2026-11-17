@@ -4,7 +4,7 @@
 :root {
     --pink: rgb(164, 14, 142);
     --rosa: #FF94DB;
-    --lilas: #CC94FF;
+    --lilas: #d3c5f4;
     --ameixa: #663F59;
     --vinho: #331529;
     --fundo: #FFF8FC;
@@ -502,6 +502,115 @@ a#botao-presencial:hover span {
     transform: translateX(4px);
 }
 
+/*       SECTION DEPOIMENTOS       */
+
+section#depoimentos {
+    width: 100%;
+    height: auto;
+    background-color: #e8dbfb;
+    padding: 40px 0px;
+}
+
+/*       TEXTO DEPOIMENTOS         */
+
+div#texto-depoimentos {
+    width: 100%;
+    height: auto;
+}
+
+div#texto-depoimentos > h3 {
+    text-align: center;
+    color: var(--pink);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+div#texto-depoimentos > h2 {
+    text-align: center;
+    color: var(--vinho);
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+div#texto-depoimentos > p {
+    text-align: center;
+    max-width: 450px;
+    font-size: 1.1em;
+    color: var(--ameixa);
+    margin: 20px auto;
+}
+
+/*      CARDS DEPOIMENTOS         */
+
+div#galeria-cards {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+div.cards-depoimentos {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    background-color: white;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.texto-card {
+    width: 100%;
+    height: auto;
+}
+
+div.texto-card > p {
+    width: auto;
+    margin: 15px 0px;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: black;
+}
+
+div.perfil-aluna {
+    border-top: 1px solid rgba(0, 0, 0, 0.365);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+div.perfil-aluna > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+div.info-aluna {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+div.info-aluna > h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0px;
+    color: var(--vinho);
+}
+
+div.info-aluna > p {
+    font-size: 0.9em;
+    margin: 0px;
+    color: var(--ameixa);
+}
+
 /*      SECTION RESULTADOS       */
 
 section#resultados {
@@ -562,3 +671,4 @@ div#aluna2-resultados img {
     object-fit: cover;
     border-radius: 12px;
 }
+
