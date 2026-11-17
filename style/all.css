@@ -656,15 +656,13 @@ div#galeria-resultados {
     padding: 12px;
 }
 
-div#aluna1-resultados,
-div#aluna2-resultados {
+div.aluna-resultados {
     width: 100%;
     display: flex;
     gap: 12px;
 }
 
-div#aluna1-resultados img,
-div#aluna2-resultados img {
+div.aluna-resultados img{
     flex: 1;
     min-width: 0;
     aspect-ratio: 3 / 4;
@@ -672,3 +670,40 @@ div#aluna2-resultados img {
     border-radius: 12px;
 }
 
+/*   SECTION CONHEÇA SUA PROFESSORA    */
+
+section#professora {
+
+}
+
+div#titulo-professora {
+
+}
+
+div#titulo-professora > h3 {
+
+}
+
+div#titulo-professora > h2 {
+
+}
+
+div#img-professora {
+
+}
+
+div#texto-professora {
+
+}
+
+div#texto-professora > h2 {
+
+}
+
+div#texto-professora > span {
+
+}
+
+div#texto-professora > p {
+    
+}
