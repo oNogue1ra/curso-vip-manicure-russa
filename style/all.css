@@ -221,11 +221,18 @@ div#titulos-hero > p#descricao-hero {
 
 /*      BOTAO HERO          */
 
-div#titulos-hero > p#botao-hero {
-    background-color: var(--ameixa);
-    color: white;
+div#botao-hero {
     width: 100%;
     height: 44px;
+    margin: 20px auto;
+}
+
+a#botao-hero {
+    background-color: var(--ameixa);
+    color: white;
+    /* width: 100%; */
+    height: 44px;
+    text-decoration: none;
     
     margin: 0 auto;
     border-radius: 8px;
@@ -241,19 +248,10 @@ div#titulos-hero > p#botao-hero {
         background-color 0.25s ease;
 }
 
-div#titulos-hero > p#botao-hero:hover {
+a#botao-hero:hover {
     background-color: #7c3464;
     transform: translateY(-4px);
     box-shadow: 0 6px 14px #33152930;
-}
-
-div#titulos-hero > p#botao-hero > a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    padding: 10px;
-    text-align: center;
 }
 
 /*          IMG HERO           */
@@ -470,18 +468,25 @@ div#video-presencial > video {
 
 /*     BOTÃO PRESENCIAL     */
 
-a#botao-presencial {
+div#botao-presencial {
+    width: 80%;
+    max-width: 400px;
+    height: 36px;
+    margin: 20px auto;
+}
+
+a.botao {
     background-color: var(--ameixa);
     color: white;
 
     display: flex;
-    width: fit-content;
+    width: 100%;
+    height: 100%;
+    
     align-items: center;
     justify-content: center;
     gap: 8px;
 
-    padding: 14px 110px;
-    margin: 20px auto;
     border-radius: 6px;
     text-decoration: none;
 
@@ -489,17 +494,17 @@ a#botao-presencial {
     color: white;
 }
 
-a#botao-presencial:hover {
+a.botao:hover {
     transform: translateY(-4px);
     background-color: #7c3464;
 }
 
-a#botao-presencial span {
+a.botao span {
     transition: transform 0.2s ease;
     
 }
 
-a#botao-presencial:hover span {
+a.botao:hover span {
     transform: translateX(4px);
 }
 
@@ -750,3 +755,108 @@ div#experiencia-professora > p {
     color: var(--ameixa);
     font-size: 0.85em;
 }
+
+/*   SECTION NOSSO SALÃO    */
+
+section#salao {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    background-color: var(--rosa-claro);
+}
+
+div#titulo-salao {
+    width: 100%;
+    height: auto;
+
+}
+
+div#titulo-salao > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: var(--pink);
+}
+
+div#titulo-salao > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--vinho);
+}
+
+div#titulo-salao > p {
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--ameixa);
+}
+
+
+div#img-salao {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+div#img-salao > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+div#texto-salao {
+    width: 100%;
+    height: auto;
+}
+
+div#texto-salao > h2 {
+    text-align: center;
+    color: var(--ameixa);
+    margin-bottom: 20px;
+}
+
+div#texto-salao > p {
+    text-align: center;
+    color: var(--ameixa);
+}
+
+div#botao-salao {
+    width: 50%;
+    height: 32px;
+    border-radius: 40px;
+    margin: 20px auto;
+}
+
+/* a.botao {
+    background-color: var(--ameixa);
+    color: white;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: color 0.2s ease, transform 0.4s ease, background-color 0.2s ease;
+    color: white;
+}
+
+a.botao:hover {
+    transform: translateY(-4px);
+    background-color: #7c3464;
+}
+
+a.botao span {
+    transition: transform 0.2s ease;
+    
+}
+
+a.botao:hover span {
+    transform: translateX(4px);
+} */
