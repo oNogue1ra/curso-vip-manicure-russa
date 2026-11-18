@@ -673,7 +673,9 @@ div.aluna-resultados img{
 /*   SECTION CONHEÇA SUA PROFESSORA    */
 
 section#professora {
-
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
 }
 
 div#titulo-professora {
@@ -705,5 +707,5 @@ div#texto-professora > span {
 }
 
 div#texto-professora > p {
-    
+
 }
