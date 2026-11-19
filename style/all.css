@@ -853,3 +853,103 @@ a#botao-salao span {
 a#botao-salao:hover span {
     transform: translateX(4px);
 }
+
+/*      SEÇÃO FAQ        */
+
+section#faq {
+    width: 100%;
+    height: auto;
+    background-color: var(--lilas);
+    padding: 40px 20px;
+}
+
+div#titulo-faq {
+    width: 100%;
+    height: auto;
+}
+
+div#titulo-faq > h3 {
+    color: var(--pink);
+    font-weight: 300;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#titulo-faq > h2 {
+    color: var(--vinho);
+
+
+    text-align: center;
+}
+
+div#titulo-faq > p {
+    color: var(--ameixa);
+
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/*      CARDS FAQ        */
+
+div#galeria-faq {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.cards-faq {
+    background-color: white;
+    
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div.pergunta-faq {
+    display: flex;
+    align-items: center;
+}
+
+div.pergunta-faq > p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+div.pergunta-faq > button {
+    background-color: var(--rosa-claro);
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+div.pergunta-faq > button.menos {
+    display: none;
+    padding-bottom: 2px;
+}
+
+div.resposta-faq {
+    margin-top: 12px;
+}
+
+div.resposta-faq > p {
+    font-size: 14px;
+}

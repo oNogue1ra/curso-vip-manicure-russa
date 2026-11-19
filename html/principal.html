@@ -225,8 +225,63 @@
             </div>
         </section>
         <section id="faq">
-            <h2>Perguntas frequentes</h2>
-            <!-- Dúvidas comuns -->
+            <div id="titulo-faq">
+                <h3>TIRE SUAS DÚVIDAS</h3>
+                <h2>Perguntas frequentes</h2>
+                <p>Tudo o que você precisa saber antes de começar sua jornada profissional.</p>
+            </div>
+            <div id="galeria-faq">
+                <div class="cards-faq">
+                    <div class="pergunta-faq">
+                        <p>Quanto tempo dura o curso?</p>
+                        <button class="mais">+</button>
+                        <button class="menos">-</button>
+                    </div>
+                    <div class="resposta-faq">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus reprehenderit, incidunt error vel nobis asperiores iure accusantium beatae quia!</p>
+                    </div>
+                </div>
+                <div class="cards-faq">
+                    <div class="pergunta-faq">
+                        <p>Quanto tempo dura o curso?</p>
+                        <button class="mais">+</button>
+                        <button class="menos">-</button>
+                    </div>
+                    <div class="resposta-faq">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus reprehenderit, incidunt error vel nobis asperiores iure accusantium beatae quia!</p>
+                    </div>
+                </div>
+                <div class="cards-faq">
+                    <div class="pergunta-faq">
+                        <p>Quanto tempo dura o curso?</p>
+                        <button class="mais">+</button>
+                        <button class="menos">-</button>
+                    </div>
+                    <div class="resposta-faq">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus reprehenderit, incidunt error vel nobis asperiores iure accusantium beatae quia!</p>
+                    </div>
+                </div>
+                <div class="cards-faq">
+                    <div class="pergunta-faq">
+                        <p>Quanto tempo dura o curso?</p>
+                        <button class="mais">+</button>
+                        <button class="menos">-</button>
+                    </div>
+                    <div class="resposta-faq">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus reprehenderit, incidunt error vel nobis asperiores iure accusantium beatae quia!</p>
+                    </div>
+                </div>
+                <div class="cards-faq">
+                    <div class="pergunta-faq">
+                        <p>Quanto tempo dura o curso?</p>
+                        <button class="mais">+</button>
+                        <button class="menos">-</button>
+                    </div>
+                    <div class="resposta-faq">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus reprehenderit, incidunt error vel nobis asperiores iure accusantium beatae quia!</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="inscricao">
             <h2>Pronta para dar o próximo passo?</h2>
@@ -314,6 +369,32 @@
 
         window.addEventListener('resize', mudouTamanho);
         mudouTamanho();
+
+        // Java para as Perguntas FAQ
+
+        const cardsFAQ = document.querySelectorAll('.cards-faq');
+
+            cardsFAQ.forEach(function(card) {
+
+                const BOTAOmais = card.querySelector('.mais');
+                const BOTAOmenos = card.querySelector('.menos');
+                const respostaFAQ = card.querySelector('.           resposta-faq');
+
+                console.log(BOTAOmais);
+                console.log(BOTAOmenos);
+                console.log(respostaFAQ);
+
+            });
+
+
+        // const cardsFAQ = document.querySelectorAll('.cards-faq');
+        // console.log(cardsFAQ);
+
+            // cardsFAQ.forEach(function(card) {
+            // console.log(card);
+            // });
+
+        
     </script>
 </body>
 </html>
