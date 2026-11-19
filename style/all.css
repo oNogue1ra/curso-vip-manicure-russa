@@ -821,14 +821,14 @@ div#texto-salao > p {
     color: var(--ameixa);
 }
 
-div#botao-salao {
+/* div#botao-salao { */
     width: 50%;
     height: 32px;
     border-radius: 40px;
     margin: 20px auto;
 }
 
-/* a.botao {
+a#botao-salao {
     background-color: var(--ameixa);
     color: white;
 
@@ -847,16 +847,16 @@ div#botao-salao {
     color: white;
 }
 
-a.botao:hover {
+a#botao-salao:hover {
     transform: translateY(-4px);
     background-color: #7c3464;
 }
 
-a.botao span {
+a#botao-salao span {
     transition: transform 0.2s ease;
     
 }
 
-a.botao:hover span {
+a#botao-salao:hover span {
     transform: translateX(4px);
-} */
+}
