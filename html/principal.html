@@ -283,8 +283,14 @@
                 </div>
             </div>
         </section>
-        <section id="inscricao">
-            <h2>Pronta para dar o próximo passo?</h2>
+        <section id="cta-final">
+            <div id="titulo-cta">
+                <h4>DÊ O PRÓXIMO PASSO</h4>
+                <h2>Realize seu sonho e comece sua nova carreira!</h2>
+                <p>Aprenda, evolua e transforme sua paixão por unhas em uma profissão de sucesso.</p>
+                <h3>Você consegue!</h3>
+                <a href="#">VAMOS CONQUISTAR SEUS OBJETIVOS JUNTAS! →</a>
+            </div>
             <!-- Botão para contato pelo WhatsApp -->
         </section>
     </main>
@@ -384,14 +390,32 @@
                 console.log(BOTAOmenos);
                 console.log(respostaFAQ);
 
-            });       
+                // Abre ou fecha o resposta FAQ
+
+                BOTAOmais.addEventListener('click', function() {
+                    click();
+                });
+
+                BOTAOmenos.addEventListener('click', function(){
+                    click();
+                })
+                
+                function click() {
+                const respostaAberto = respostaFAQ.style.display === 'flex';
+
+                respostaFAQ.style.display = respostaAberto ? 'none' : 'flex';
+
+                BOTAOmais.style.display = respostaAberto ? 'flex' : 'none';
+
+                BOTAOmenos.style.display = respostaAberto ? 'none' : 'flex';
+
+                BOTAOmais.setAttribute('aria-expanded', String(!respostaAberto));
+                BOTAOmais.setAttribute('aria-label', respostaAberto ? 'Abrir resposta' : 'Fechar resposta');
+
+                BOTAOmenos.setAttribute('aria-expanded', String(!respostaAberto));
+                BOTAOmenos.setAttribute('aria-label', respostaAberto ? 'Abrir resposta' : 'Fechar resposta');
+                }
+            });
     </script>
 </body>
-</html>
-
-// const cardsFAQ = document.querySelectorAll('.cards-faq');
-        // console.log(cardsFAQ);
-
-            // cardsFAQ.forEach(function(card) {
-            // console.log(card);
-            // });
+</html>      

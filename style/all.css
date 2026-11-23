@@ -947,9 +947,53 @@ div.pergunta-faq > button.menos {
 }
 
 div.resposta-faq {
+    display: none;
     margin-top: 12px;
 }
 
 div.resposta-faq > p {
     font-size: 14px;
+}
+
+/*      SEÇÃO CTA        */
+
+section#cta-final {
+    background-image: url('../images/cta-mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+
+}
+
+div#titulo-cta {
+    width: 100%;
+    height: auto;
+}
+
+div#titulo-cta > h4 {
+    margin-bottom: 10px;
+    color: var(--vinho);
+}
+
+div#titulo-cta > h2 {
+    margin-bottom: 20px;
+    color: var(--vinho);
+}
+
+div#titulo-cta > p {
+    margin-bottom: 10px;
+    color: var(--ameixa);
+}
+
+div#titulo-cta > h3 {
+    margin-bottom: 10px;
+    color: var(--ameixa);
+}
+
+div#titulo-cta > a {
+    background-color: var(--ameixa);
 }
