@@ -958,7 +958,7 @@ div.resposta-faq > p {
 /*      SEÇÃO CTA        */
 
 section#cta-final {
-    background-image: url('../images/cta-mobile.png');
+    background-image: url('../images/cta-mobile-fundo-750px.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -972,28 +972,59 @@ section#cta-final {
 div#titulo-cta {
     width: 100%;
     height: auto;
+    min-height: 700px;
 }
 
 div#titulo-cta > h4 {
     margin-bottom: 10px;
-    color: var(--vinho);
+    color: #4B1938;
 }
 
 div#titulo-cta > h2 {
     margin-bottom: 20px;
-    color: var(--vinho);
+    color: #4B1938;
 }
 
 div#titulo-cta > p {
     margin-bottom: 10px;
-    color: var(--ameixa);
+    color: #4B1938;
 }
 
 div#titulo-cta > h3 {
     margin-bottom: 10px;
-    color: var(--ameixa);
+    color: #4B1938;
 }
 
 div#titulo-cta > a {
     background-color: var(--ameixa);
+    color: white;
+    text-decoration: none;
+
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+span.seta-cta {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+div#titulo-cta > a:hover span.seta-cta {
+    transform: translateX(5px);
+}
+
+div#titulo-cta > a > img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    color: white;
 }
