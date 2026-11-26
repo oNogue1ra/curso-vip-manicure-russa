@@ -973,6 +973,7 @@ div#titulo-cta {
     width: 100%;
     height: auto;
     min-height: 700px;
+    padding: 30px 0px;
 }
 
 div#titulo-cta > h4 {
